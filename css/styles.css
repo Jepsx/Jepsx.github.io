@@ -1,0 +1,169 @@
+:root{
+    --cultured:#f5f5f7;
+    --lavanderWeb:#E4E4F5;
+    --lightGreen:#B0F090;
+    --darkSeaGreen:#A2C78F;
+    --xanadu:#6A8060;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Nunito, sans-serif;
+    background-color: var(--cultured);
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(6,minmax( 53px, 150px));
+    grid-template-rows: 50px repeat(4, 400px) 50px ;
+    align-items: center;
+    grid-template-areas: 
+        "header header header header header header"
+        "general general general general general general"
+        "skills skills skills skills skills skills "
+        "projects projects projects projects projects projects"
+        "info info info info info info"
+        "footer footer footer footer footer footer"
+
+    ;
+}
+
+header{
+    width: auto;
+    height: 50px;
+    font-size: 2rem;
+    background-color: var(--lightGreen);
+    grid-area: header;
+}
+.container__nav{
+    display: grid;
+    grid-template-columns: repeat(2,minmax( 160px, 450px));
+    grid-template-rows: 50;
+}
+
+
+.container__ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,50px);
+
+}
+
+.item__button{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    justify-self: end;
+    margin-right: 10px;
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.3);
+    border: none;
+    border-radius: 5px;
+    background-color: var(--darkSeaGreen);
+}
+.item__button:hover{
+    background-color: var(--lavanderWeb);
+}
+.item__button > svg{
+   fill: var(--lavanderWeb);
+}
+
+.item__button > svg:hover{
+    fill: var(--darkSeaGreen);
+ }
+
+.item__button:focus + ul{
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.dropdown-ul{
+    
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 160px;
+    grid-template-rows: repeat(3,30px);
+    grid-template-areas: 
+        "i1"
+        "i2"
+        "i3"
+    ;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all .4s ease;
+}
+
+.dropdown-ul:hover{
+    opacity: 1;
+    pointer-events: visible;
+}
+.drop-ul__li{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    vertical-align: middle;
+    color: var(--lavanderWeb);
+    background-color: var(--darkSeaGreen);
+}
+
+.drop-ul__li:hover, .drop-ul__li:hover > svg{
+    background-color: var(--lavanderWeb);
+    color: var(--darkSeaGreen);
+    fill: var(--darkSeaGreen);
+}
+
+.drop-ul__li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.git{
+    border-radius: 5px 5px 0 0;
+    grid-area: i1;
+}
+
+.drop-ul__li > svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--lavanderWeb);
+    margin-left: 5px;
+    vertical-align: text-bottom;
+} 
+
+.linkin{
+    grid-area: i2;
+}
+
+.contactame{
+    border-radius: 0 0 5px 5px;
+    grid-area: i3;
+}
+.general{
+    grid-area: general;
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.project{
+    grid-area: projects;
+}
+
+.info{
+    grid-area: info;
+}
+
+footer{
+    grid-area: footer   ;
+}
