@@ -285,9 +285,12 @@ header{
     padding-top: 3.5px;
     color: var(--xanadu);
 }
-
+.backend{
+    display: flex;
+    justify-content: end;
+}
 .skills__item > .item__info > .container-backend{
-    left: 105px;
+    left:-12px;
 }
 
 .project{
