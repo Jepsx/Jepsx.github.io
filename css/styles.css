@@ -159,7 +159,7 @@ header{
     grid-template-rows: repeat(2,320px);
 }
 
-.general__item{
+.general__item, .skills__item{
     position: relative;
     width: 100%;
     height: 320px;
@@ -203,6 +203,91 @@ header{
 
 .skills{
     grid-area: skills;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(2,320px);
+}
+.skills > div{
+    position: absolute;
+    width: 97px;
+    height: 37px;
+    text-align: center;
+    top: -19.8px;
+    vertical-align: middle;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); ;
+    color: var(--xanadu);
+    background-color: var(--lavanderWeb);
+    z-index: 3;
+}
+
+.skills > div > h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+}
+.skills-background__1, .skills-background__3{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    grid-column: 1 / 9;
+    grid-row: 1/6;
+    background: var(--lightGreen);
+    clip-path: polygon(0% 100%, 100% 0,100% 100%);
+}
+.skills-background__2, .skills-background__4{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    grid-column: 1 / 9;
+    grid-row: 1/6;
+    background:var(--darkSeaGreen);
+    clip-path: polygon(0% 100%, 0 0,100% 0);
+}
+
+.skills-background__4{
+    background-color: var(--lightGreen);
+}
+.skills-background__3{
+    background-color: var(--darkSeaGreen);
+}
+
+.skills__item > .item__info{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 8;
+    grid-row: 2 / 5 ;
+    background-color: var(--cultured);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25) ;
+}
+.skills__item > .item__info > div{
+    position: relative;
+    width: 123px;
+    height: 27px;
+    top: -12.6px;
+    left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--lavanderWeb);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25) ;
+}
+
+.skills__item > .item__info .info-title__frontend, .skills__item > .item__info .info-title__backend {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 3.5px;
+    color: var(--xanadu);
+}
+
+.skills__item > .item__info > .container-backend{
+    left: 105px;
 }
 
 .project{
