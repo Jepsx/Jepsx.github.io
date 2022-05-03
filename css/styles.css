@@ -68,20 +68,12 @@ header{
     border-radius: 5px;
     background-color: var(--darkSeaGreen);
 }
-.item__button:hover{
-    background-color: var(--lavanderWeb);
-}
 .item__button > svg{
    fill: var(--lavanderWeb);
 }
-
-.item__button > svg:hover{
+.item__button:hover, .active > svg:hover{
+    background-color: var(--lavanderWeb);
     fill: var(--darkSeaGreen);
- }
-
-.item__button:focus + ul{
-    opacity: 1;
-    pointer-events: visible;
 }
 
 .dropdown-ul{
@@ -100,26 +92,26 @@ header{
         "i3"
     ;
     list-style: none;
-    opacity: 0;
-    pointer-events: none;
     transform: translateY(10px);
     transition: all .4s ease;
 }
 
-.dropdown-ul:hover{
-    opacity: 1;
-    pointer-events: visible;
-}
 .drop-ul__li{
     display: inline-block;
     width: 100%;
     height: 100%;
     font-weight: 500;
     vertical-align: middle;
+    opacity: 0;
+    pointer-events: none;
     color: var(--lavanderWeb);
     background-color: var(--darkSeaGreen);
 }
 
+.activeItem{
+    opacity: 1;
+    pointer-events: visible;
+}
 .drop-ul__li:hover, .drop-ul__li:hover > svg{
     background-color: var(--lavanderWeb);
     color: var(--darkSeaGreen);
