@@ -1,33 +1,11 @@
-var parentNode = document.querySelector('.container__ul');
-console.log(parentNode);
+parentNode = document.querySelector('.container__ul');
 var button = parentNode.children[0];
-
-button.onfocus = ()=>{
-    button.classList.add('active');
-    let ulsibling = button.nextElementSibling;
-    let ulItems = ulsibling.querySelectorAll('.drop-ul__li');
+button.addEventListener('click',()=>{
+    button.classList.toggle('active');
+    let ulSibling = button.nextElementSibling;  
+    let ulItems = ulSibling.querySelectorAll('li');
     ulItems.forEach((item)=>{
-        item.classList.add('activeItem');
-    })
-    // debugger;
-}
+        item.classList.toggle('activeItem');
+    });
 
-button.onblur = ()=>{
-    let ulsibling = button.nextElementSibling;
-    let ulItems = ulsibling.querySelectorAll('.drop-ul__li');
-    ulItems.forEach((item)=>{
-        item.classList.remove('activeItem');
-    })
-    button.classList.remove('active');
-}
-
-
-// button.addEventListener('click',()=>{
-//     button.classList.add('active');
-//     let ulsibling = button.nextElementSibling;
-//     let ulItems = ulsibling.querySelectorAll('.drop-ul__li');
-//     ulItems.forEach((item)=>{
-//         item.classList.add('activeItem');
-//     })
-//     debugger;
-// })
+});
