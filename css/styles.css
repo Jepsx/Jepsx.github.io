@@ -71,7 +71,8 @@ header{
 .item__button > svg{
    fill: var(--lavanderWeb);
 }
-.item__button:hover, .active > svg:hover{
+.item__button:hover, .active > svg,.item__button:focus, .item__button:focus > svg{
+    border-radius: 5px;
     background-color: var(--lavanderWeb);
     fill: var(--darkSeaGreen);
 }
@@ -79,9 +80,9 @@ header{
 .dropdown-ul{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    position: absolute;
+    margin-inline-end: 10px;
     z-index: 100;
-    width: 100%;
+    justify-self: right;
     display: grid;
     text-align: center;
     grid-template-columns: 160px;
