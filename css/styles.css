@@ -26,6 +26,7 @@ body{
 }
 
 header{
+    z-index: 1;
     width: 100%;
     height: 100%;
     grid-column: 1 / 2;
@@ -130,7 +131,9 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
 }
-
+.general{
+    z-index: 0;
+}
 .general__item, .skills__item{
     position: relative;
     width: 100%;
