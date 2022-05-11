@@ -143,6 +143,18 @@ header{
     grid-template-rows: repeat(5,1fr);
 
 }
+
+.general__item > h1{
+    color: var(--xanadu);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+    z-index: 4;
+    grid-column: 2 / 8;
+    grid-row: 3 / 4;
+}
+
 .background__container{
     z-index: 3;
     grid-column: 1 / 9;
