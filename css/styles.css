@@ -35,6 +35,13 @@ header{
     background-color: var(--lightGreen);
 }
 
+.nav__item > img{
+    width: 40px;
+    height: 40px;
+    margin-inline-start: 10px;
+    margin-block-start: 10px;
+}
+
 .container__nav{
     display: grid;
     width: 100%;
