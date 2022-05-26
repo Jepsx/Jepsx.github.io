@@ -188,13 +188,31 @@ header{
 }
 .intro__item_circle > .intro__item_circle_circle{
     align-self: center;
+    display: flex;
+    justify-content: center;
     width: 180px;
     height: 180px;
     background-color: var(--gainsBoro);
     clip-path: circle(50%);
 }
-.photo > .intro__item_name{
 
+.intro__item_circle_circle > picture{
+    align-self: center;
+    width: 180px;
+    height: 180px;
+    clip-path: circle(50%);
+}
+
+.intro__item_circle_circle > picture > img{
+    width: 180px;
+    height: 180px;
+    background-image: url(../assets/images/photo.png);
+}
+
+
+
+
+.photo > .intro__item_name{
     font-size: 2rem;
     font-weight: 500;
     color: var(--cultured);
