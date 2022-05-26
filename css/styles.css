@@ -113,7 +113,7 @@ header{
     pointer-events: visible;
 }
 
-.intro, .about-me, .skills, .projects{
+.intro, .skills, .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
 }
@@ -171,6 +171,7 @@ header{
 
 .intro > .photo{
     display: flex;
+    height: 320px;
     justify-content: center;
     text-align: center;
     flex-direction: column;
@@ -223,6 +224,75 @@ header{
     font-weight: 400;
     color: var(--gainsBoro);
 }
+
+.about-me{
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: minmax(280px , 320px);
+    grid-template-rows: 80px 180px 80px ;
+    background-color: var(--cultured);
+    overflow: hidden;
+    
+}
+
+.about-me__title{
+    grid-row: 1 / 2;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--richBlack);
+}
+
+.about-me__p{
+    z-index: 2;
+    grid-row: 2 / 3;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--richBlack);
+}
+
+.about-me >.about-me__circle{
+    position: absolute;
+    width: 266px;
+    height: 266px;
+    justify-self: end;
+    align-self: end;
+    top:200px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gainsBoro);
+    clip-path: circle(50%);
+}
+
+.about-me >.about-me__circle > .about-me__circle_circle{
+
+    display: flex;
+    align-self: center;
+    width: 203px;
+    height: 203px;
+    justify-content: center;
+    background-color: var(--morningBlue);
+    clip-path: circle(50%);
+}
+
+.about-me >.about-me__circle > .about-me__circle_circle
+> .about-me__circle_circle_circle{
+
+    display: flex;
+    align-self: center;
+    width: 144px;
+    height: 144px;
+    justify-content: center;
+    background-color: var(--richBlack);
+    clip-path: circle(50%);
+}
+
+
 
 .background__container{
     z-index: 3;
