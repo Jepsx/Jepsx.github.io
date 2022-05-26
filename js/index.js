@@ -1,4 +1,4 @@
-parentNode = document.querySelector('.container__ul');
+parentNode = document.querySelector('.nav-container');
 var button = parentNode.children[0];
 button.addEventListener('click',()=>{
     button.classList.toggle('active');
