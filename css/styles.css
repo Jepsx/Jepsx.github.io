@@ -412,6 +412,8 @@ header{
 .projects__projects-container__item img{
     margin-block-start: 10px;
     margin-block-end: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
     width: 183px;
     height: 140px;
     object-fit: cover;
