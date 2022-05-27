@@ -436,7 +436,7 @@ header{
 .contact{
     display: flex;
     flex-direction: column;
-    width: 320px;
+    min-width: 320px;
     height: 320px;
     color: var(--richBlack);
     background-color: var(--gainsBoro);
@@ -473,7 +473,7 @@ header{
 footer{
     display: flex;
     justify-content: space-evenly;
-    width: 320px;
+    min-width: 320px;
     height: 60px;
     background-color: var(--morningBlue);
 }
