@@ -376,7 +376,7 @@ header{
 
 .projects > .projects__projects-container{
         display: flex;
-        height: 264px;
+        height: 320px;
         margin-block-end: 60px;
         overflow-x: scroll;
         overscroll-behavior-x: contain;
@@ -388,8 +388,10 @@ header{
     scroll-snap-align: center;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 264px;
+    justify-content: space-evenly;
+    min-width: 200px;
+    max-width: 300px;
+    height: 300px;
     background-color: var(--gainsBoro);
     color: var(--richBlack);
     border-radius: 5px;
@@ -404,7 +406,7 @@ header{
 
 .projects__projects-container__item > p{
     width: 155px;
-    margin-block-start: 10px;
+    margin-block-start: 5px;
     font-size: 1.2rem;
     font-weight: 400;
 }
