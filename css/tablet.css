@@ -38,8 +38,3 @@
 .linkin{
     order: 2;
 }
-
-.projects > .projects__projects-container{
-    justify-content: center;
-    overflow: none;
-}

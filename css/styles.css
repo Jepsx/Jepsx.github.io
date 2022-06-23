@@ -18,8 +18,10 @@ html{
 }
 
 body{
-    display: grid;
-    grid-template-rows: 60px repeat(5, auto) 60px;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-rows: 60px repeat(5, auto) 60px; */
 }
 
 header{
