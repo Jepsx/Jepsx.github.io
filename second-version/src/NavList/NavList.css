@@ -1,0 +1,11 @@
+.nav-container__list{
+    width: 100%;
+    z-index: 6;
+    margin-block-start:10px ;
+    margin-inline-end: 10px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,40px);
+    list-style: none;
+}

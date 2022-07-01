@@ -1,0 +1,28 @@
+.nav-container__list_listItem{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    padding-block-start:5px;  
+    background-color: var(--gainsBoro);
+    color: var(--richBlack);
+    opacity: 0;
+    pointer-events: none;
+}
+.GitHub{
+    border-radius: 5px 5px 0 0;
+}
+.Contacto{
+    border-radius: 0 0 5px 5px;
+}
+.nav-container__list_listItem > a{
+    text-decoration: none;
+    color: inherit;
+}
+.nav-container__list_listItem > a > svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--richBlack);
+    margin-left: 5px;
+    vertical-align: text-bottom;
+} 
