@@ -8,3 +8,120 @@ header{
     font-size: 2rem;
     background-color: var(--gainsBoro);
 }
+
+.nav-container__ico > svg{
+    fill: var(--richBlack);
+}
+
+.nav-container__ico > svg.active{
+    fill: var(--morningBlue);
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+}
+
+.intro{
+    z-index: 0;
+}
+
+.about-me{
+    display: inline-grid;
+    position: relative;
+    grid-template-columns: minmax(280px , 320px);
+    grid-template-rows: 80px 180px 80px ;
+    background-color: var(--cultured);
+    overflow: hidden;
+    
+}
+
+.about-me__title{
+    grid-row: 1 / 2;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--richBlack);
+}
+
+.about-me__p{
+    z-index: 2;
+    grid-row: 2 / 3;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--richBlack);
+}
+
+.about-me >.about-me__circle{
+    position: absolute;
+    width: 266px;
+    height: 266px;
+    justify-self: end;
+    align-self: end;
+    top:200px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gainsBoro);
+    clip-path: circle(50%);
+}
+
+.about-me >.about-me__circle > .about-me__circle_circle{
+
+    display: flex;
+    align-self: center;
+    width: 203px;
+    height: 203px;
+    justify-content: center;
+    background-color: var(--morningBlue);
+    clip-path: circle(50%);
+}
+
+.about-me >.about-me__circle > .about-me__circle_circle
+> .about-me__circle_circle_circle{
+
+    display: flex;
+    align-self: center;
+    width: 144px;
+    height: 144px;
+    justify-content: center;
+    background-color: var(--richBlack);
+    clip-path: circle(50%);
+}
+
+.skills{
+    display: grid;
+    background-color: var(--gainsBoro);
+} 
+
+.skills > .skills__title{
+    width: 170px;
+    height: 57px;
+    grid-row: 1 / 2;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0 5px;
+    margin-block-end: 20px;
+    background-color: var(--morningBlue);
+    color: var(--cultured);
+}
+
+.skills > .skills__title > h2, .projects > .projects__title > h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    align-self: center;
+}
+
+.skills > .skills__container{
+    display: grid;
+    padding-inline-start: 35px;
+    padding-inline-end: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    margin-block-end: 20px;
+
+}

@@ -9,6 +9,11 @@
     opacity: 0;
     pointer-events: none;
 }
+
+.nav-container__list_listItem.active{
+    opacity: 1;
+    pointer-events: all;
+}
 .GitHub{
     border-radius: 5px 5px 0 0;
 }

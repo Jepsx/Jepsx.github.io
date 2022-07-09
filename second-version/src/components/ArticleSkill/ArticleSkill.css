@@ -1,0 +1,44 @@
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 100px;
+}
+.logo-container > span {
+    font-size: 1.6rem;
+    color: var(--richBlack);
+}
+
+.logo-container > i{
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo-container > i.Html{
+    background-image: url('../../icons8-html-5.svg');
+
+}
+.logo-container > i.Css{
+    background-image: url('../../icons8-css3.svg');
+
+}
+.logo-container > i.Angular{
+    background-image: url('../../icons8-angularjs.svg');
+
+}
+.logo-container > i.JavaScript{
+    background-image: url('../../icons8-javascript.svg');
+
+}
+.logo-container > i.Reactjs{
+    background-image: url('../../icons8-react-native.svg');
+
+}
+.logo-container > i.Nodejs{
+    background-image: url('../../icons8-nodejs.svg');
+
+}

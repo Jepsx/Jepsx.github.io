@@ -1,0 +1,10 @@
+.skills__container_rol >h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--richBlack);
+}
+
+.skills__container_rol > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+}
