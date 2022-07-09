@@ -1,9 +1,0 @@
-.projects > .projects__projects-container{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    height: auto;
-    overflow: hidden;
-    gap: 10px;
-}
