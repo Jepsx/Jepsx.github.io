@@ -11,3 +11,13 @@
     align-self: center;
     margin-inline-end:10px ;
 }
+
+@media (min-width:750px){
+    .nav-container{
+        display: flex;
+    }
+
+    .nav-container__ico{
+        display: none;
+    }
+}
